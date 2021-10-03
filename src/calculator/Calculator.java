@@ -62,12 +62,13 @@ public class Calculator {
 		}exit();
 		
 	}
-	
+	//Addition
 	public static void addition() {
 		Scanner input= new Scanner(System.in);
 		
 		System.out.println("Enter the first number for the calculator:");
 		int num1=input.nextInt();
+		//Invalid entry
 		while(num1>5 || num1<1) {
 			System.out.println("Invalid Entry, Try Again");
 			input.nextLine();
@@ -84,7 +85,7 @@ public class Calculator {
 		int sum=num1+num2;
 		System.out.println(sum);
 	}
-	
+	//Subtraction
 	public static void subtraction() {
 		Scanner input= new Scanner(System.in);
 		
@@ -107,6 +108,7 @@ public class Calculator {
 		System.out.println(difrence);
 		
 	}
+	//multipication
 	public static void multipication() {
 	
 		Scanner input= new Scanner(System.in);
@@ -130,6 +132,7 @@ public class Calculator {
 		System.out.println(mult);
 	
 	}
+	//division
 	public static void division() {
 	
 		Scanner input= new Scanner(System.in);
@@ -153,6 +156,7 @@ public class Calculator {
 		System.out.println(div);
 		
 	}
+	//exit message
 	public static void exit() {
 		System.out.println("Sorry to see you go :(");
 	}
